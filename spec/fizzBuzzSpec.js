@@ -13,14 +13,24 @@ describe("fizzbuzz", function(){
       expect(javabuzz._isDivisibleBy(3, 4)).toBe(false);
     });
 
-    it('is divisable by 5', function(){
-      expect(javabuzz._isDivisibleBy(5, 5)).toBe(true);
+    it('returns Java given 3', function(){
+      expect(javabuzz.isDivisibleByThree(3)).toBe(true);
     });
 
-    it('is not divisable by 4', function(){
-      expect(javabuzz._isDivisibleBy(4, 5)).toBe(false);
+    it('returns Buzz given 5', function(){
+      expect(javabuzz.isDivisibleByFive(5)).toBe(true);
     });
 
-
+    it('returns JavaBuzz given 15', function(){
+      expect(javabuzz.isDivisibleByFifteen(15)).toBe(true);
+    });
   });
+
+  describe('playing the game', function(){
+
+    it('says JavaBuzz when given 15', function(){
+      expect(javabuzz.game(15)).toEqual("JavaBuzz");
+    });
+  });
+
 });
