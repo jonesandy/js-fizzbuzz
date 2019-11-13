@@ -31,6 +31,10 @@ describe("fizzbuzz", function(){
     it('says JavaBuzz when given 15', function(){
       expect(javabuzz.game(15)).toEqual("JavaBuzz");
     });
+
+    it('says Java when given 3', function(){
+      expect(javabuzz.game(3)).toEqual("Java");
+    });
   });
 
 });

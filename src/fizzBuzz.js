@@ -24,6 +24,13 @@ Javabuzz.prototype.isDivisibleByFifteen = function(num){
   }
 };
 
-Javabuzz.prototype.game = function(){
-  return "JavaBuzz";
+Javabuzz.prototype.game = function(num){
+  if (this.isDivisibleByFifteen(num)){
+    return "JavaBuzz";
+  } else if (this.isDivisibleByThree(num)){
+    return "Java";
+  } else {
+    return num;
+  }
+
 };
