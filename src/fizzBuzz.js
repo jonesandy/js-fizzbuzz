@@ -29,8 +29,9 @@ Javabuzz.prototype.game = function(num){
     return "JavaBuzz";
   } else if (this.isDivisibleByThree(num)){
     return "Java";
+  } else if (this.isDivisibleByFive(num)){
+    return "Buzz";
   } else {
     return num;
   }
-
 };
