@@ -4,13 +4,18 @@ var Javabuzz = function(){
 
 Javabuzz.prototype.isDivisibleByThree = function(num) {
   if (num % 3 === 0){
-    return true;
+    return "Java";
   } else {
-    return false;
+    return num;
   }
   
 };
 
 Javabuzz.prototype.isDivisibleByFive =  function(num) {
-  return true;
+  if (num % 5 === 0){
+    return "Buzz";
+  } else {
+    return num;
+  }
+  
 };
